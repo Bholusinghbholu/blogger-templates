@@ -1,0 +1,108 @@
+.skand-wrap {
+  max-width: 800px;
+  margin: auto;
+  padding: 16px;
+  background: linear-gradient(to bottom right, #fffaf2, #fff1dc);
+  border-radius: 12px;
+  border: 1px solid #e0c9a6;
+  box-shadow: 0 0 6px rgba(174, 126, 67, 0.2);
+  font-family: 'Noto Serif Devanagari', 'Georgia', serif;
+  color: #3b2e14;
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.mantra-bar {
+  text-align: center;
+  padding: 8px;
+  background: #fff5da;
+  color: #a76b1f;
+  font-weight: bold;
+  font-size: 18px;
+  animation: glowText 3s infinite alternate;
+}
+
+@keyframes glowText {
+  0% { text-shadow: 0 0 3px #ffe4a0; }
+  100% { text-shadow: 0 0 8px #f3c577; }
+}
+
+.skand-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #d8b280;
+}
+
+.skand-caption {
+  text-align: center;
+  font-size: 14px;
+  color: #7a3e00;
+  margin-top: -4px;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.skand-title {
+  text-align: center;
+  font-size: 24px;
+  color: #7a3e00;
+  border-bottom: 1px solid #d9a66c;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #e2b76f;
+}
+
+.skand-divider {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e0c9a6, transparent);
+  margin: 30px 0;
+}
+
+.skand-shlok {
+  background: #fef6e7;
+  border-left: 4px solid #d4a373;
+  margin: 14px 0;
+  padding: 10px 14px;
+  font-size: 17px;
+  white-space: pre-wrap;
+}
+
+.skand-info {
+  background: #fff2e0;
+  border: 1px dashed #c8a97e;
+  padding: 10px 14px;
+  margin-top: 20px;
+  font-style: italic;
+  border-radius: 6px;
+  color: #4d3b21;
+  font-size: 15px;
+}
+
+/* Animation default state */
+.skand-wrap .skand-shlok,
+.skand-wrap .skand-info,
+.skand-wrap .skand-title,
+.skand-wrap img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+/* When visible */
+.skand-wrap .visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger effect on shlokas */
+.skand-wrap .skand-shlok:nth-child(4) { transition-delay: 0.1s; }
+.skand-wrap .skand-shlok:nth-child(5) { transition-delay: 0.2s; }
+.skand-wrap .skand-shlok:nth-child(6) { transition-delay: 0.3s; }
+.skand-wrap .skand-shlok:nth-child(7) { transition-delay: 0.4s; }
+.skand-wrap .skand-shlok:nth-child(8) { transition-delay: 0.5s; }
+.skand-wrap .skand-shlok:nth-child(9) { transition-delay: 0.6s; }
