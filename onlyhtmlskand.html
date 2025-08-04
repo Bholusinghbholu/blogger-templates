@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="skand-style.css">
+
+<div class="skand-wrap">
+  <div class="mantra-bar">ॐ नमः शिवाय</div>
+
+  <img src="https://example.com/skand-image.jpg" alt="Skand Puran Image" />
+  <div class="skand-caption">स्कन्द पुराण का दिव्य चित्र</div>
+
+  <div class="skand-title">स्कन्द पुराण – अध्याय शीर्षक</div>
+  <hr class="skand-divider" />
+
+  <div class="skand-shlok">॥ श्लोक १ ॥</div>
+  <div class="skand-shlok">॥ श्लोक २ ॥</div>
+  <div class="skand-shlok">॥ श्लोक ३ ॥</div>
+  <div class="skand-shlok">॥ श्लोक ४ ॥</div>
+  <div class="skand-shlok">॥ श्लोक ५ ॥</div>
+  <div class="skand-shlok">॥ श्लोक ६ ॥</div>
+  <div class="skand-shlok">॥ श्लोक ७ ॥</div>
+  <div class="skand-shlok">॥ श्लोक ८ ॥</div>
+  <div class="skand-shlok">॥ श्लोक ९ ॥</div>
+
+  <div class="skand-info">
+    इस अध्याय में भगवान शिव की महिमा, धर्म के रहस्य, और भक्तों की कथा वर्णित है।
+  </div>
+</div>
+
+<script>
+  const skandElements = document.querySelectorAll(
+    '.skand-wrap .skand-shlok, .skand-wrap .skand-info, .skand-wrap .skand-title, .skand-wrap img'
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  skandElements.forEach(el => observer.observe(el));
+</script>

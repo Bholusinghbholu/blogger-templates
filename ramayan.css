@@ -1,0 +1,33 @@
+.ramayan-section {
+  font-family: 'Georgia', serif;
+  background-color: #fff8e1;
+  border: 2px solid #d4af37;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  color: #3e2723;
+}
+
+.ramayan-section h2 {
+  text-align: center;
+  color: #b71c1c;
+  font-size: 28px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 5px;
+}
+
+.ramayan-section h3 {
+  color: #4e342e;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ramayan-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 15px;
+}
