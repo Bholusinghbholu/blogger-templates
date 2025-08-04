@@ -1,3 +1,29 @@
+.nav-button:hover {
+  background: #ffe0b2;
+  transform: scale(1.05);
+}
+
+.nav-button {
+  background: linear-gradient(to right, #ffcc80, #ffb74d);
+  color: #4e342e;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  border: 2px solid #d4af37;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.chapter-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
 .ramayan-section {
   font-family: 'Georgia', serif;
   background-color: #fff8e1;
@@ -10,7 +36,7 @@
 }
 
 .ramayan-section h2 {
-  text-align: center;
+  text-align: justify;
   color: #b71c1c;
   font-size: 28px;
   margin-bottom: 10px;
